@@ -3,8 +3,6 @@ import {song} from './song.js';
 /* --------------------------------------------------------- */
 
 // Create <h1><small>auteur -</small> Titre de la chanson</h1>
- 
-const $body = document.body;
 
 const $h1 = document.createElement("h1");
 const $small = document.createElement("small");
@@ -17,8 +15,7 @@ $h1.prepend($small);
 
 // Create a div with the class .lyrics .
 // Add the verses, enclosed in paragraphs <p>
-const $main = document.createElement("main");
-$body.appendChild($main);
+const $main = document.getElementById("container");
 const $lyrics = document.createElement("div");
 $lyrics.setAttribute("class", "lyrics");
 $main.appendChild($lyrics);
@@ -37,10 +34,11 @@ for(let i = 0; i < $contenus.length; i ++){
 
 }
 
-// Create a footer
-const $footer = document.createElement("footer");
-$footer.textContent = "© Copyright 2020 - IUT | This is an exercice for CodingGame for a course on Javascript & DOM"
-$body.appendChild($footer);
+// Create a content for footer
+const $footer = document.getElementById("footer");
+let dateNow = new Date();
+let year = dateNow.getFullYear(); 
+$footer.textContent = "© Copyright "+ year + " - IUT | This is an exercice for CodingGame for a course on Javascript & DOM"
 
 // Get the box "masquer les paroles"
 const checkboxLyrics = document.getElementById("masquer-lyrics");
