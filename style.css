@@ -1,0 +1,13 @@
+.choeur {
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+.lyrics,
+main,
+footer {
+    padding: 0.5em 1em;
+}
