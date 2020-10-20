@@ -1,0 +1,57 @@
+
+body{
+    font-family: 'Roboto', sans-serif;   
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 0.5em 0;
+}
+
+header, footer{
+    background-color: rgb(163, 12, 7);
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+input[type="checkbox"]{
+    margin-right: 0.5em;
+    border: none;
+}
+
+main{
+    width: 65%;
+    margin: auto;
+}
+
+main p{
+    line-height: 1.5em;
+    padding: 0.8em 0;
+}
+
+.choeur {
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+.lyrics,
+main {
+    padding: 0.5em 1em;
+}

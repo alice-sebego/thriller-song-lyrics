@@ -34,6 +34,14 @@ for(let i = 0; i < $contenus.length; i ++){
 
 }
 
+// Insert a image under lyrics
+
+const $image = document.createElement("img");
+$image.setAttribute("src", "images/illustration-song.jpg");
+$image.setAttribute("alt", "illustration song");
+$main.appendChild($image);
+// <img src="images/illustration-song.jpg" alt="illustration-song"> 
+
 // Create a content for footer
 const $footer = document.getElementById("footer");
 let dateNow = new Date();
